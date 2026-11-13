@@ -1,0 +1,180 @@
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#050505;
+
+}
+
+/* Navbar */
+
+.navbar{
+
+    width:100%;
+
+    height:90px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 80px;
+
+}
+
+/* Logo */
+
+.logo{
+
+    color:#E50914;
+
+    font-size:35px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+}
+
+/* Menu */
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:45px;
+
+}
+
+/* Links */
+
+.nav-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+/* Hover */
+
+.nav-links a:hover{
+
+    color:#E50914;
+
+}
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* ==========================================
+   ROOT COLORS
+========================================== */
+
+:root{
+
+    --bg-color:#050505;
+
+    --card-color:#111111;
+
+    --primary:#E50914;
+
+    --white:#ffffff;
+
+    --gray:#bdbdbd;
+
+}
+
+
+/* ==========================================
+   BODY
+========================================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--bg-color);
+
+    color:var(--white);
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+/* CUSTOM CURSOR */
+
+.custom-cursor {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e50914;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+    transition: width 0.2s ease, height 0.2s ease;
+}
+
+.cursor-dot {
+    width: 7px;
+    height: 7px;
+    background: #e50914;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 100000;
+}
+
+.custom-cursor.cursor-hover {
+    width: 50px;
+    height: 50px;
+}
+
+@media (hover: none), (max-width: 768px) {
+    .custom-cursor,
+    .cursor-dot {
+        display: none;
+    }
+}
